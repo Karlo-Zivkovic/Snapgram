@@ -1,27 +1,30 @@
-# React + TypeScript + Vite
+<h1>Description</h1>
+Social network app clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br />
 
-Currently, two official plugins are available:
+<h2>Libraries and Utilities Used</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- <b>React</b>
+- <b>Typescript</b>
+- <b>Supabase</b>
+- <b>React Query</b>
+- <b>react-dropzone</b>
+- <b>react-infinite-scroll-component</b>
+- <b>Tailwind</b>
+- <b>React error boundary</b>
+- <b>React hook form</b>
+- <b>React hot toast</b>
+- <b>React router</b>
+- <b>React icons</b>
+- <b>Recharts</b>
 
-## Expanding the ESLint configuration
+<h2>HOW TO START:</h2>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- <b>npm install</b>
+- <b>npm run dev</b>
+- <b>create an account and start posting :)</b>
 
-- Configure the top-level `parserOptions` property like this:
+<h2>Project screenshot</h2>
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<img src="https://i.imgur.com/AlR61X4.png" height="80%" width="80%" alt="project dashboard"/>
