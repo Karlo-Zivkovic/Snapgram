@@ -68,6 +68,7 @@ const SignupForm: FC = () => {
             },
           })}
         />
+        <p className="text-red-500">{errors.email?.message}</p>
       </div>
       <div className="flex gap-1.5 flex-col mt-5">
         <label htmlFor="password">Password</label>
@@ -84,6 +85,7 @@ const SignupForm: FC = () => {
             },
           })}
         />
+        <p className="text-red-500">{errors.password?.message}</p>
       </div>
       <button className="w-full bg-violet-500 h-11 rounded-md hover:bg-violet-600 mt-7 font-medium">
         {isSigningUp ? <Loader size="small" /> : "Sign Up"}
