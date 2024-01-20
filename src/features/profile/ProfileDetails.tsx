@@ -13,7 +13,7 @@ import ErrorComp from "../../ui/ErrorComp";
 const ProfileDetails: FC = () => {
   const { user_id } = useParams();
   const { userParam, isLoadingUserParam, userParamError } = useGetUserFromParam(
-    user_id!
+    user_id!,
   );
   const { togglingFollowUser, isFollowingUser, isUserFollowing, user } =
     useToggleFollow();
@@ -28,11 +28,7 @@ const ProfileDetails: FC = () => {
       </div>
     );
 
-  if (userParamError)
-    return (
-      <ErrorComp errorMsg="Could not fetch user, please try again later." />
-    );
-  if (postsError)
+  if (userParamError || postsError)
     return (
       <ErrorComp errorMsg="Could not fetch user, please try again later." />
     );
@@ -46,7 +42,7 @@ const ProfileDetails: FC = () => {
       <div className="text-slate-50 xl:flex-row w-full flex flex-col items-center justify-between">
         <div className="flex flex-col xl:flex-row items-center w-full gap-8 grow">
           <img
-            className="h-40 w-40 rounded-full object-cover"
+            className="h-40 w-44 rounded-full object-cover"
             src={userParam.imageUrl || "/public/profile-placeholder.svg"}
             alt="profile picture"
           />
