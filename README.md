@@ -23,7 +23,8 @@ Social network app clone
 
 - <b>npm install</b>
 - <b>npm run dev</b>
-- <b>create an account and start posting :)</b>
+- <b>email: karlo.zivkovic2@gmail.com</b>
+- <b>password: Berlin123</b>
 
 <h2>Project screenshot</h2>
 

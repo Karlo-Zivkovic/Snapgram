@@ -5,7 +5,7 @@ import { useToggleBookmark } from "../features/posts/queryHooks/useToggleBookmar
 
 const usePostBookmark = (postId: string) => {
   const { toggleBookmarkPost, isTogglingBookmarkPost } = useToggleBookmark();
-  const { bookmarks, isLoadingBookmarks, error } = useGetBookmarks();
+  const { bookmarks} = useGetBookmarks();
   const { user } = useGetUser();
   const [isBookmarkedByCurUser, setIsBookmarkedByCurUser] = useState(false);
 

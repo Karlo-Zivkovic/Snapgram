@@ -13,7 +13,7 @@ export function useGetSearchedPosts(searchTerm: string) {
     queryKey: ["posts", searchTerm],
     queryFn: ({ pageParam }) => getPosts({ pageParam, searchTerm }),
     initialPageParam: 0,
-    getNextPageParam: (lastPage, allPages, lastPageParam) => {
+    getNextPageParam: (_, allPages, lastPageParam) => {
       return allPages[allPages.length - 1].length > 0
         ? lastPageParam + 1
         : undefined;

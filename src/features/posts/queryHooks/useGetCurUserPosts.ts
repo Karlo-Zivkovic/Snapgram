@@ -19,7 +19,7 @@ export function useGetCurUserPosts(
       getCurUserPosts(user_id, pageParam, fetchLikedPosts),
     initialPageParam: 0,
 
-    getNextPageParam: (lastPage, allPages, lastPageParam) => {
+    getNextPageParam: (_, allPages, lastPageParam) => {
       return allPages[allPages.length - 1].length > 0
         ? lastPageParam + 1
         : undefined;
