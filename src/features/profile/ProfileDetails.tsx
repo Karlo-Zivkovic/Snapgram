@@ -42,7 +42,7 @@ const ProfileDetails: FC = () => {
       <div className="text-slate-50 xl:flex-row w-full flex flex-col items-center justify-between">
         <div className="flex flex-col xl:flex-row items-center w-full gap-8 grow">
           <img
-            className="h-40 w-44 rounded-full object-cover"
+            className="h-40 w-40 xl:w-48 2xl:w-44 rounded-full object-cover"
             src={userParam.imageUrl || "/public/profile-placeholder.svg"}
             alt="profile picture"
           />
