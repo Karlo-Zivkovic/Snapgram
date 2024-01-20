@@ -17,7 +17,6 @@ Social network app clone
 - <b>React hot toast</b>
 - <b>React router</b>
 - <b>React icons</b>
-- <b>Recharts</b>
 
 <h2>HOW TO START:</h2>
 
