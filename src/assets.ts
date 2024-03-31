@@ -1,4 +1,5 @@
+import logo from "../public/logo.svg";
 const images = {
-  logo: "/public/logo.svg",
+  logo,
 };
 export default images;
