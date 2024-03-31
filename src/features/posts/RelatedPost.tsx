@@ -48,7 +48,7 @@ const RelatedPost: FC<RelatedPostProps> = ({ relatedPost }) => {
       <div className="absolute font-semibold bottom-4 left-4 text-basic flex gap-2 items-center">
         <img
           className=" object-cover h-12 w-12 rounded-full"
-          src={relatedPost.users.imageUrl || "/public/profile-placeholder.svg"}
+          src={relatedPost.users.imageUrl || "profile-placeholder.svg"}
           alt="post creator profile image"
         />
         <p>{relatedPost.users.name}</p>

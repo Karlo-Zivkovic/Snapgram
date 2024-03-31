@@ -28,7 +28,7 @@ const Sidebar: FC = () => {
           <img
             className="h-14 w-14 rounded-full"
             src={
-              user?.user_metadata.imageUrl || "/public/profile-placeholder.svg"
+              user?.user_metadata.imageUrl || "profile-placeholder.svg"
             }
             alt="profile picture"
           />

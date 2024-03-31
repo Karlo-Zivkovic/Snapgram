@@ -21,7 +21,7 @@ const TopUser: FC<TopUserProps> = ({ topUser }) => {
     <li className="border border-gray-800 rounded-[20px] h-[13rem] flex flex-col items-center justify-center xl:flex-grow 2xl:flex-grow-0 w-[45%]">
       <img
         className="h-14 w-14 rounded-full mb-1"
-        src={topUser.imageUrl || "/public/profile-placeholder.svg"}
+        src={topUser.imageUrl || "profile-placeholder.svg"}
         alt="post creator profile picture"
       />
       <p className="font-semibold text-lg">{topUser.name}</p>

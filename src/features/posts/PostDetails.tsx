@@ -70,7 +70,7 @@ function PostDetails() {
             >
               <img
                 className="h-14 w-14 rounded-full object-cover"
-                src={post.users.imageUrl || "/public/profile-placeholder.svg"}
+                src={post.users.imageUrl || "profile-placeholder.svg"}
                 alt="profile image"
               />
               <div className="flex flex-col">

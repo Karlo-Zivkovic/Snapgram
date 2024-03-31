@@ -34,7 +34,7 @@ const DisplayAllUsers: FC = () => {
               >
                 <img
                   className="h-16 w-16 mb-2 rounded-full"
-                  src={userEntity.imageUrl || "/public/profile-placeholder.svg"}
+                  src={userEntity.imageUrl || "profile-placeholder.svg"}
                   alt="profile image"
                 />
                 <p className="font-semibold text-xl">{userEntity.name}</p>

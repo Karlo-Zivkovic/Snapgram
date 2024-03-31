@@ -24,7 +24,7 @@ const SavedPost: FC<SavedPostProps> = ({ post }) => {
       <div className="absolute font-semibold bottom-4 left-4 flex gap-2 items-center">
         <img
           className=" object-cover h-12 w-12 rounded-full"
-          src={post.users.imageUrl || "/public/profile-placeholder.svg"}
+          src={post.users.imageUrl || "profile-placeholder.svg"}
           alt="post creator profile picture"
         />
         <p className="text-xs">{post.users.name}</p>

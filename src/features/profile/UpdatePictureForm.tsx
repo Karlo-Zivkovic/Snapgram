@@ -15,7 +15,7 @@ const UpdatePictureForm: FC = () => {
       updatingPicture(acceptedFiles[0]);
       updateUsersPicture(acceptedFiles[0], userId);
     },
-    [updatingPicture, userId]
+    [updatingPicture, userId],
   );
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
@@ -24,7 +24,7 @@ const UpdatePictureForm: FC = () => {
     <div className="flex gap-4 items-center mt-14">
       <img
         className="h-28 w-28 rounded-full"
-        src={user?.user_metadata.imageUrl || "/public/profile-placeholder.svg"}
+        src={user?.user_metadata.imageUrl || "profile-placeholder.svg"}
         alt="profile picture"
       />{" "}
       <div

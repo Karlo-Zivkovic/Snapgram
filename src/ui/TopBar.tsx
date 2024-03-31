@@ -33,7 +33,7 @@ const TopBar: FC = () => {
           <img
             className="h-12 w-12 rounded-full"
             src={
-              user?.user_metadata.imageUrl || "/public/profile-placeholder.svg"
+              user?.user_metadata.imageUrl || "profile-placeholder.svg"
             }
             alt="profile picture"
           />
