@@ -44,7 +44,7 @@ const CreateEditPostForm: FC<CreateEditPostFormProps> = ({ post }) => {
 
       setFile(image);
     },
-    [deletingImage, updatingPostPicture, file]
+    [deletingImage, updatingPostPicture, file],
   );
 
   const { getRootProps, getInputProps } = useDropzone({
@@ -134,8 +134,8 @@ const CreateEditPostForm: FC<CreateEditPostFormProps> = ({ post }) => {
                   file
                     ? `https://dfluxqymxlkbchyzzhge.supabase.co/storage/v1/object/public/app-images/${file?.name}`
                     : post
-                    ? post.imageUrl
-                    : undefined
+                      ? post.imageUrl
+                      : undefined
                 }
                 alt="input file img"
                 className="object-cover rounded-xl w-full h-full"
@@ -146,7 +146,7 @@ const CreateEditPostForm: FC<CreateEditPostFormProps> = ({ post }) => {
             </div>
           ) : (
             <div className="flex flex-col justify-center items-center">
-              <img src="/public/file-upload.svg" className="h-24 w-24" alt="" />
+              <img src="file-upload.svg" className="h-24 w-24" alt="" />
               <p className="text-base font-medium">Drag photo here</p>
               <p className="text-base text-violet-500 opacity-60">
                 SVG, PNG, JPG

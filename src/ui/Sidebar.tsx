@@ -8,7 +8,6 @@ import { FiBookmark } from "react-icons/fi";
 import { useLogout } from "../features/authentication/queryHooks/useLogout";
 import Loader from "./Loader";
 import { useGetUser } from "../features/authentication/queryHooks/useGetUser";
-import images from "../assets";
 
 const Sidebar: FC = () => {
   const { logingOut, isLogingOut } = useLogout();
@@ -22,14 +21,12 @@ const Sidebar: FC = () => {
     <div className="w-[13%] 2xl:w-[16%] md:w-[16rem] p-6 pt-10 bg-neutral-950 hidden md:flex md:flex-col md:justify-between h-screen fixed">
       <div>
         <Link to="/">
-          <img src={images.logo} alt="logo" />
+          <img src="logo.svg" alt="logo" />
         </Link>
         <Link to={`/profile/${user?.id}`} className="flex mt-14 gap-3">
           <img
             className="h-14 w-14 rounded-full"
-            src={
-              user?.user_metadata.imageUrl || "profile-placeholder.svg"
-            }
+            src={user?.user_metadata.imageUrl || "profile-placeholder.svg"}
             alt="profile picture"
           />
           <div className="flex flex-col gap-1 text-slate-50">

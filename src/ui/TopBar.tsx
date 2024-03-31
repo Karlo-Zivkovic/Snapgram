@@ -16,7 +16,7 @@ const TopBar: FC = () => {
   return (
     <div className="fixed top-0 h-20 flex justify-between items-center px-5 w-screen bg-neutral-950 z-50 md:hidden">
       <Link to="/">
-        <img src="/public/logo.svg" alt="logo" />
+        <img src="logo.svg" alt="logo" />
       </Link>
       <div className="flex gap-8 items-center">
         <button
@@ -32,9 +32,7 @@ const TopBar: FC = () => {
         <Link to={`/profile/${user?.id}`}>
           <img
             className="h-12 w-12 rounded-full"
-            src={
-              user?.user_metadata.imageUrl || "profile-placeholder.svg"
-            }
+            src={user?.user_metadata.imageUrl || "profile-placeholder.svg"}
             alt="profile picture"
           />
         </Link>
