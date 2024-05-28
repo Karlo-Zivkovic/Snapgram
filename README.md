@@ -18,12 +18,11 @@ Social network app clone
 - <b>React router</b>
 - <b>React icons</b>
 
-<h2>HOW TO START:</h2>
+<h2>DEPLOYED:</h2>
 
-- <b>npm install</b>
-- <b>npm run dev</b>
+- <b>https://the-wild-oasis-org.netlify.app</b> 
 - <b>email: karlo.zivkovic2@gmail.com</b>
-- <b>password: Berlin123</b>
+- <b>pass: Berlin123</b>
 
 <h2>Project screenshot</h2>
 
